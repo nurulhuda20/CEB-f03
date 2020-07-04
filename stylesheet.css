@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
@@ -5,16 +9,8 @@ h1, h2, h3, h4, h5, h6, p, div {
   padding: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Lucida Grande";
-}
-
-li {
-  list-style: none;
 }
 
 a {
@@ -25,27 +21,11 @@ a {
   clear: left;
 }
 
-.nav{
-	width: 100%;
-	height: 50px;
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-
-.nav ul{
-  background-color: rgba(255, 255, 255, 0.3);
-	padding-left: 200px;
-	text-align: center;
-}
-
-.nav li{
-	float: left;
-  margin: 20px;
-}
-
-.nav a{
-  color: white;
-
-}
-
 
 .top-wrapper {
   padding: 100px 0 100px 0;
@@ -55,29 +35,24 @@ a {
 
 }
 
-.container {
-  max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .top-wrapper h1 {
-  text-align: left;
   opacity: 0.7;
-  font-size: 60px;
+  font-size: 45px;
+  text-align: left;
   letter-spacing: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  color: green;
 }
 
 .top-wrapper p {
   opacity: 0.7;
-  font-size: 20px;
   margin-bottom: 3px;
+  color: #ff2b22;
 }
 
 .btn-wrapper {
-  margin: 10px 0;
+  text-align: right;
+  margin: 20px;
 }
 
 .btn-wrapper p {
@@ -86,7 +61,6 @@ a {
 
 .signup {
   background-color: #239b76;
-  width: 180px;
 }
 
 .facebook {
@@ -95,7 +69,6 @@ a {
 }
 
 .twitter {
-  width: 180px;
   background-color: #55acee;
 }
 
@@ -105,6 +78,7 @@ a {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
+  text-align: center;
 }
 
 .btn:hover {
@@ -135,16 +109,7 @@ header {
 
 .header-right {
   float: right;
-  background-color: #e37222;
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.login {
-  padding-top: 10px;
+  margin-right: -25px;
 }
 
 .header-right a {
@@ -152,29 +117,11 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+  float: left;
+  transition: all 0.5s;
 }
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-
-.heading {
-  padding-top: 60px;
-  padding-bottom: 30px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.heading h3 {
-  font-weight: normal;
-  padding-top: 30px;
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .lesson-wrapper {
@@ -183,6 +130,16 @@ header {
   padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
 }
 
 .lesson {
@@ -196,17 +153,27 @@ header {
 
 .lesson-icon p {
   position: absolute;
-  top: 80px;
+  top: 50px;
   width: 100%;
   color: #018b95;
+  font-size: 10px;
 }
 
 .txt-contents {
   width: 80%;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 15px;
   color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.heading h2 {
+  text-align: center;
+  font-weight: normal;
 }
 
 .message-wrapper {
@@ -228,32 +195,25 @@ header {
   box-shadow: none;
 }
 
-.footer {
-  background-color: #65babf;
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
+.menu-icon {
   color: white;
-  text-align: left;
-  padding-left: 30px;
-  height: 75px;
-  width: 100%;
-}
-
-
-.footer-logo {
-  float: left;
-  padding: 30px 20px;
-  font-size: 32px
-}
-
-.footer-list {
   float: right;
-}
-
-.footer-list h2 {
-  padding: 33px 20px;
-}
-
-
-.footer-list li {
-  Margin-left: : 40px;
-  padding: 33px 20px;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
 }
