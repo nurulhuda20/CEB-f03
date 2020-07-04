@@ -35,23 +35,24 @@
 
    .top-wrapper {
      text-align: left;
-     padding-top: 130px;
-   }
+     margin-top: 20px;
+    }
+
    .top-wrapper h1 {
        font-size: 24px;
        line-height: 36px;
+    }
+
+   .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+     .lessons {
+       width: 100%;
      }
 
-     .top-wrapper p {
-       font-size: 14px;
-       line-height: 20px;
-     }
-
-     .header-right {
-       display: none;
-     }
-
-     .menu-icon {
-       display: block;
+     footer {
+       text-align: center;
      }
   }
