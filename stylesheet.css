@@ -1,8 +1,14 @@
+
+
 html, body,
 ul, ol, li,
 h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
   padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +21,10 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.clear {
+  clear: left;
 }
 
 .nav{
@@ -44,11 +54,11 @@ a {
   background-image: url(images/top_en.jpg);
   background-size: cover;
   color: green;
-  
+
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -146,8 +156,9 @@ header {
 }
 
 .lesson-wrapper {
-  height: 500px;
   padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -234,3 +245,4 @@ header {
   Margin-left: : 40px;
   padding: 33px 20px;
 }
+
