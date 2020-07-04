@@ -58,6 +58,7 @@ a {
 }
 
 .container {
+  max-width: 1170px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -153,6 +154,13 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+}
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
 }
 
 .lesson-wrapper {
