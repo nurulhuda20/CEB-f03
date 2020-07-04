@@ -1,5 +1,5 @@
 /* Untuk Tablet */
-@media (max-wide: 1000px) {
+@media all and(max-wide: 1000px) {
   .lesson {
     width: 50%;
     margin-bottom: 50px;
@@ -15,11 +15,12 @@
 }
 
 /* Untuk Smartphones */
-@media (max-width: 670px) {
+@media all and(max-width: 670px) {
   /* Ubah width milik lesson ke 100% */
   .lesson {
     width: 100%;
     }
+
   footer {
   text-align: center;
     }
