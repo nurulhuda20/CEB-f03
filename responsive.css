@@ -1,10 +1,5 @@
 /* Untuk Tablet */
-@media (max-wide: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
+@media all and (max-wide: 1000px) {
   .top-wrapper h1 {
     font-size: 32px;
   }
@@ -12,45 +7,76 @@
   .heading h2 {
     font-size: 20px;
   }
+
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
 }
 
 /* Untuk Smartphones */
-@media (max-width: 670px) {
+@media all and (max-width: 670px) {
   /* Ubah width milik lesson ke 100% */
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+  display: block;
+}
+
+.btn {
+  width: 100%;
+}
+
+.facebook {
+  margin-bottom: 10px;
+}
+
+.top-wrapper {
+  text-align: left;
+  margin-top: 20px;
+ }
+
+ .top-wrapper h1 {
+   font-size: 24px;
+   line-height: 36px;
+ }
+
+ .top-wrapper p {
+   font-size: 14px;
+   line-height: 20px;
+ }
+
   .lesson {
     width: 100%;
     }
+
   footer {
   text-align: center;
     }
 
-  .btn {
-    width: 100%;
-  }
 
-   .facebook {
-     margin-bottom: 10px;
-   }
 
-   .top-wrapper {
-     text-align: left;
-     padding-top: 130px;
-   }
+
+
+
+
    .top-wrapper h1 {
        font-size: 24px;
        line-height: 36px;
+    }
+
+   .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+     .lessons {
+       width: 100%;
      }
 
-     .top-wrapper p {
-       font-size: 14px;
-       line-height: 20px;
-     }
-
-     .header-right {
-       display: none;
-     }
-
-     .menu-icon {
-       display: block;
+     footer {
+       text-align: center;
      }
   }
